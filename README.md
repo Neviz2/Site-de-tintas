@@ -16,7 +16,10 @@ Pagina com o seu produtos
 
 
 
-site apenas para estudos
+As logos são para navegar pelas paginas, as fotos nas categorias vão para a pagina com os produtos, e os produtos em destaque tambem
+
+
+Lucas Neves 
 
 
 
