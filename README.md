@@ -2,7 +2,21 @@
  Site sobre tintas
 
 
-Um t
+Seria uma site basico de tintas com as funções basicas de HTML e CSS
+
+
+Funcionalidades:
+
+
+Pagina inicial com as categorias e produtos em destaque
+Pagina de contato com formulario
+pagina com detalhes dos produtos
+Pagina com o seu produtos
+
+
+
+
+site apenas para estudos
 
 
 
