@@ -4,121 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="CSS/styleCarrinho.css">
+    <link rel="shortcut icon" type="image/ico" href="Img/Logos/LOGO.png">
 </head>
 
-    <style>
-
-        *{
-            padding: 0;
-            margin: 0;
-            color: white;
-        }
-
-        body{
-
-            background-color: #f3e8db;
-        }
-
-        container{
-            display: grid;
-            grid-template-areas: 
-            'header'
-            'compras'
-            'compras'
-            'compras'
-            'footer'
-            ;
-
-            grid-auto-rows: 18vh 20vh 20vh 20vh 12vh;
-        }
-
-        header{
-            grid-area: header;
-            background-color: darkgoldenrod;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-        }
-
-        header p{
-
-            height: 100px;
-            width: 100px;
-        }
-
-        @media (min-width: 400px) and (max-width: 800px) {
-            
-            header p{
-                
-            }
-        }
-
-        .compras{
-
-            grid-area: compras;
-
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .item{
-            height: 40vh;
-            width: 60vw;
-            background-color: darkgoldenrod;
-            color: white;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            text-align: center;
-            padding: 50px;
-
-        }
-
-        footer{
-
-            grid-area: footer;
-            background-color: darkgoldenrod;
-            text-align: center;
-            color: white;
-            padding: 10px;
-        }
-
-        
-        .h1{
-            color: white;
-            font-size: 50px;
-        } 
-
-        .imglogo{
-            
-            height: 100px;
-            width: 100px;
-        }  
-
-
-        .item img{
-
-            width: 200px;
-            height: 200px;
-            border-radius: 20px;
-            margin: 20px;
-        }
-        
-        button{
-
-            height: 50px;
-            width: 150px;
-            border-radius: 20px;
-            background-color: beige;
-            border: beige solid 2px;
-        }
-        button p {
-            color: black;
-        }
-    </style>
+   
+    
 
 <body>
     <div class="container">

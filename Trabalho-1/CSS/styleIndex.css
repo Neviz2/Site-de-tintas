@@ -1,0 +1,180 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+
+    background-color: #f3e8db;
+}
+
+.container{
+
+    display: grid;
+    grid-template-areas: 
+    
+    'header header header'
+    'titulo titulo titulo'
+    'categoria categoria categoria'
+    'tipo tipo tipo'
+    'destaque destaque destaque'
+    'tintas tintas tintas'
+    'footer footer footer'
+    ;
+
+    grid-auto-rows: 18vh 18vh 4vh 30vh 4vh 30vh 8vh;
+}
+
+header{
+    grid-area: header;
+    background-color: darkgoldenrod;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* COLOCAR OS LINK COM A MESMA COR DO TEXTO E DAR ESPAÇO ENTRE ELES  */
+}
+
+.titulo{
+        grid-area: titulo;
+        background-color: rgb(212, 212, 233);
+        text-align: center;
+        padding: 15px;
+}
+
+.categoria{
+        grid-area: categoria;
+        padding: 15px;
+        
+}
+
+
+.tipo{
+
+    grid-area: tipo;
+    display: flex;
+    width: 50%;
+    max-width: 1000px;
+    position: relative;
+    left: 25vw;
+    
+}
+
+.item{
+    flex: 1;
+    overflow: hidden;
+    transition: linear 0.4s;
+    cursor: pointer;
+    border: solid black 1px;
+}
+
+.item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* deixa a img sem distorcer*/
+        transition: linear 0.4s;
+        display: block;
+}
+
+.tipo:hover .item{
+    flex: 1;
+}
+
+.tipo .item:hover {
+
+    flex: 5;
+}
+
+.destaque{
+    grid-area: destaque;
+    padding-bottom: 15px;
+}
+
+.tintas{
+
+    grid-area: tintas;
+    display: flex;
+    gap: 0px;
+    width: 50%;
+    max-width: 1000px;
+    position: relative;
+    left: 25vw;
+    margin-bottom: 20px;
+
+}
+
+.tintas:hover .item{
+    flex: 1;
+}
+
+.tintas .item:hover {
+
+    flex: 5;
+}
+
+footer{
+    grid-area: footer;
+    background-color: darkgoldenrod;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+
+
+header {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+
+    .tipo,
+    .tintas {
+        width: 90%; 
+        left: 0; 
+        margin: auto; 
+        flex-direction: column;
+        height: auto; 
+    }
+
+
+    .item {
+        height: 200px; 
+        margin-bottom: 10px; 
+    }
+
+
+    .container {
+        grid-auto-rows: auto; 
+    }
+
+
+    .titulo h2 {
+        font-size: 10px;
+    }
+
+    .titulo p {
+        font-size: 10px;
+    }
+
+}
+
+
+header img{
+
+     width: 80px;
+     height: 80px;
+}
+
+.headermenu{
+
+    width: 110px;
+    height: 110px;
+}
+
+
